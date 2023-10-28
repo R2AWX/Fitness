@@ -38,4 +38,28 @@
     font-size: 22px;
     line-height: 22px;
   }
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+  }
+
+  @include active {
+    position: relative;
+    color: $color-sapphire;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: $color-sapphire;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
 }
