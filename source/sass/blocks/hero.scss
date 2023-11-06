@@ -1,24 +1,33 @@
-.hero__container {
-  display: flex;
+.hero {
   background: $resolution-blue-to-venetian-red;
   color: $color-default-white;
+}
+
+.hero__container {
+  display: flex;
+  max-width: $vp-1366;
   gap: 70px;
   padding-bottom: 120px;
 
   @include vp-1365 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     width: 100%;
     padding-bottom: 100px;
-    justify-content: space-between;
     gap: 30px;
   }
 
   @include vp-767 {
+    grid-template-columns: 1fr;
     padding-bottom: 70px;
     flex-direction: column;
   }
 }
 
 .hero__container img {
+  align-self: center;
+
   @include vp-767 {
     display: none;
   }
@@ -36,8 +45,12 @@
   }
 
   @include vp-767 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     min-width: 100%;
     align-items: end;
+    gap: 15px;
   }
 }
 

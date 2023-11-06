@@ -1,6 +1,4 @@
 .header__container {
-  display: flex;
-  justify-content: space-between;
   background: $resolution-blue-to-venetian-red;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -11,7 +9,14 @@
   }
 }
 
-.header__container img {
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.header__wrapper img {
   @include vp-1365 {
     width: 111px;
     height: 24px;
