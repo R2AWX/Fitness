@@ -12,7 +12,6 @@
   @include vp-1365 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
     width: 100%;
     padding-bottom: 100px;
     gap: 30px;
@@ -22,11 +21,16 @@
     grid-template-columns: 1fr;
     padding-bottom: 70px;
     flex-direction: column;
+    gap: 60px;
   }
 }
 
-.hero__container img {
+.hero__container picture {
   align-self: center;
+
+  @include vp-1365 {
+    justify-self: center;
+  }
 
   @include vp-767 {
     display: none;
@@ -41,16 +45,21 @@
   text-align: end;
 
   @include vp-1365 {
+    justify-self: center;
     min-width: 324px;
   }
 
   @include vp-767 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
     min-width: 100%;
-    align-items: end;
     gap: 15px;
+  }
+}
+
+.hero__heading-container {
+  @include vp-767 {
+    justify-self: center;
   }
 }
 
@@ -62,6 +71,8 @@
 
   @include vp-767 {
     line-height: 20px;
+    align-self: end;
+    justify-self: center;
   }
 }
 
@@ -113,7 +124,13 @@
   }
 }
 
-.hero__desctop-btn {
+.hero__desktop-btn {
+  width: 230px;
+
+  @include vp-1365 {
+    width: 185px;
+  }
+
   @include vp-767 {
     display: none;
   }
@@ -124,5 +141,6 @@
 
   @include vp-767 {
     display: inline-flex;
+    width: 100%;
   }
 }

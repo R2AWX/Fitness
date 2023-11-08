@@ -1,6 +1,6 @@
 .gym__container {
   display: flex;
-  max-width: 1366px;
+  max-width: $vp-1366;
   padding-top: 120px;
   padding-bottom: 120px;
   gap: 145px;
@@ -141,7 +141,7 @@
   }
 }
 
-[data-overlay="gym"] {
+[data-overlay="gym"].is-inactive {
   &::after {
     content: "";
     position: absolute;
@@ -158,19 +158,15 @@
   height: 100%;
 }
 
-.gym__play-button {
+.gym__btn {
   position: absolute;
-  content: "";
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
   padding: 0;
-  background: transparent;
-  border: none;
   border-radius: 50%;
-  cursor: pointer;
   z-index: 1;
 
   &::before {
@@ -249,9 +245,6 @@
   }
 
   &:disabled {
-    pointer-events: none;
-    cursor: default;
-
     svg {
       color: $color-sapphire;
       opacity: 0.4;
@@ -268,7 +261,7 @@
   }
 }
 
-.gym__play-button svg {
+.gym__btn svg {
   position: absolute;
   top: 50%;
   left: 50%;

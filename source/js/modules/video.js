@@ -1,5 +1,5 @@
-const container = document.querySelector('.gym__video');
-const button = container.querySelector('.gym__play-button');
+const container = document.querySelector('[data-overlay="gym"]');
+const button = container.querySelector('[data-button="gym"]');
 const poster = container.querySelector('picture');
 
 function initVideo() {
@@ -9,7 +9,7 @@ function initVideo() {
       if (poster) {
         poster.style.display = 'none';
       }
-      delete container.dataset.overlay;
+      container.classList.remove('is-inactive');
       button.style.display = 'none';
       createVideo();
     });

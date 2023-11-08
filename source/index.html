@@ -34,7 +34,7 @@
               <div class="hero__heading-container">
                 <p class="hero__city">Омск</p>
                 <h2 class="hero__heading">Фитнес<br />центр</h2>
-                <a class="btn btn--hero hero__desctop-btn" href="#abonnements">Купить абонемент</a>
+                <a class="btn btn--primary btn--primary-dark hero__desktop-btn" href="#abonnements">Купить абонемент</a>
               </div>
             </div>
             <picture>
@@ -43,7 +43,7 @@
               <source media="(max-width: 1365px)" srcset="img/hero/hero-tablet@1x.jpg 1x, img/hero/hero-tablet@2x.jpg 2x" width="324" height="390">
               <img src="img/hero/hero-desktop@1x.jpg" srcset="img/hero/hero-desktop@2x.jpg 2x" width="500" height="524" alt="Спортсмен в футболке супермена.">
             </picture>
-            <a class="btn btn--hero hero__mobile-btn" href="#abonnements">Купить абонемент</a>
+            <a class="btn btn--primary btn--primary-dark hero__mobile-btn" href="#abonnements">Купить абонемент</a>
           </div>
         </section>
 
@@ -60,20 +60,20 @@
                 <source type="image/webp" media="(max-width: 767px)" width="320" height="313" srcset="./img/gym/gym-mobile@1x.webp 1x, ./img/gym/gym-mobile@2x.webp 2x">
                 <source type="image/webp" media="(max-width: 1365px)" width="678" height="345" srcset="./img/gym/gym-tablet@1x.webp 1x, ./img/gym/gym-tablet@2x.webp 2x">
                 <source type="image/webp" width="660" height="401" srcset="./img/gym/gym-desktop@1x.webp 1x, ./img/gym/gym-desktop@2x.webp 2x">
-                <source type="image/jpeg" media="(max-width: 767px)" width="320" height="313" srcset="./img/gym/gym-mobile@1x.jpg 1x, ./img/gym/gym-mobile@2x.jpg 2x">
-                <source type="image/jpeg" media="(max-width: 1365px)" width="678" height="345" srcset="./img/gym/gym-tablet@1x.jpg 1x, ./img/gym/gym-tablet@2x.jpg 2x">
+                <source media="(max-width: 767px)" width="320" height="313" srcset="./img/gym/gym-mobile@1x.jpg 1x, ./img/gym/gym-mobile@2x.jpg 2x">
+                <source media="(max-width: 1365px)" width="678" height="345" srcset="./img/gym/gym-tablet@1x.jpg 1x, ./img/gym/gym-tablet@2x.jpg 2x">
                 <img src="./img/gym/gym-desktop@1x.jpg" width="660" height="401" srcset="./img/gym/gym-desktop@2x.jpg 2x" alt="Тренажерный зал.">
               </picture>
-              <div class="gym__video" data-overlay="gym">
+              <div class="gym__video is-inactive" data-overlay="gym">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" width="320" height="167" srcset="./img/gym/video-mobile@1x.webp 1x, ./img/gym/video-mobile@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1365px)" width="266" height="167" srcset="./img/gym/video-tablet@1x.webp 1x, ./img/gym/video-tablet@2x.webp 2x">
                   <source type="image/webp" width="364" height="228" srcset="./img/gym/video-desktop@1x.webp 1x, ./img/gym/video-desktop@2x.webp 2x">
-                  <source type="image/jpeg" media="(max-width: 767px)" width="320" height="167" srcset="./img/gym/video-mobile@1x.jpg 1x, ./img/gym/video-mobile@2x.jpg 2x">
-                  <source type="image/jpeg" media="(max-width: 1365px)" width="266" height="167" srcset="./img/gym/video-tablet@1x.jpg 1x, ./img/gym/video-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" width="320" height="167" srcset="./img/gym/video-mobile@1x.jpg 1x, ./img/gym/video-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1365px)" width="266" height="167" srcset="./img/gym/video-tablet@1x.jpg 1x, ./img/gym/video-tablet@2x.jpg 2x">
                   <img src="./img/gym/video-desktop@1x.jpg" width="364" height="228" srcset="./img/gym/video-desktop@2x.jpg 2x" alt="Постер видео тренажерного зала.">
                 </picture>
-                <button class="gym__play-button" type="button" aria-label="Воспроизвести видео.">
+                <button class="btn gym__btn" type="button" data-button="gym" aria-label="Воспроизвести видео.">
                   <svg width="17" height="17" viewBox="0 0 17 17" role="img">
                     <use href="img/sprite.svg#play"></use>
                   </svg>
@@ -84,8 +84,70 @@
         </section>
 
         <section class="abonnements" id="abonnements">
-          <div class="container">
-            <h2>Абонементы</h2>
+          <div class="container abonnements__container" data-section="abonnements">
+            <h2 class="abonnements__heading">Абонементы</h2>
+            <fieldset class="abonnements__input-container">
+              <label class="abonnements__label">
+                <input class="visually-hidden abonnements__input" type="radio" name="price" data-input="price" checked>
+                <span class="abonnements__mark">1 месяц</span>
+              </label>
+              <label class="abonnements__label">
+                <input class="visually-hidden abonnements__input" type="radio" name="price" data-input="price">
+                <span class="abonnements__mark">6 месяцев</span>
+              </label>
+              <label class="abonnements__label">
+                <input class="visually-hidden abonnements__input" type="radio" name="price" data-input="price">
+                <span class="abonnements__mark">12 месяцев</span>
+              </label>
+            </fieldset>
+
+            <div class="abonnements__content-container">
+              <div class="abonnements__card-container">
+                <h3 class="abonnements__card-heading">С тренером</h3>
+                <p class="abonnements__card-description">12 занятий</p>
+                <div class="abonnements__price-container">
+                  <span class="abonnements__price-shadow" data-text="coach">5000</span>
+                  <span class="abonnements__price" data-text="coach">5000</span>
+                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                    <use href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <a class="btn btn--primary btn--primary-light abonnements__btn" href="#">Купить абонемент</a>
+              </div>
+              <div class="abonnements__card-container">
+                <h3 class="abonnements__card-heading">Дневной</h3>
+                <p class="abonnements__card-description">С 8:00 до 17:00</p>
+                <div class="abonnements__price-container">
+                  <span class="abonnements__price-shadow" data-text="daytime">1700</span>
+                  <span class="abonnements__price" data-text="daytime">1700</span>
+                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                    <use href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <a class="btn btn--primary btn--primary-light abonnements__btn" href="#">Купить абонемент</a>
+              </div>
+              <div class="abonnements__card-container">
+                <h3 class="abonnements__card-heading">Полный день</h3>
+                <p class="abonnements__card-description">С 8:00 до 22:00</p>
+                <div class="abonnements__price-container">
+                  <span class="abonnements__price-shadow" data-text="fullday">2700</span>
+                  <span class="abonnements__price" data-text="fullday">2700</span>
+                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                    <use href="img/sprite.svg#rouble"></use>
+                  </svg>
+                </div>
+                <a class="btn btn--primary btn--primary-light abonnements__btn" href="#">Купить абонемент</a>
+              </div>
+            </div>
+
+            <div class="abonnements__img-container">
+              <picture>
+                <source type="image/webp" media="(max-width: 1365px)" width="327" height="423" srcset="./img/abonnements/barbells-tablet@1x.webp 1x, ./img/abonnements/barbells-tablet@2x.webp 2x">
+                <source type="image/webp" width="287" height="494" srcset="./img/abonnements/barbells-desktop@1x.webp 1x, ./img/abonnements/barbells-desktop@2x.webp 2x">
+                <source media="(max-width: 1365px)" width="327" height="423" srcset="./img/abonnements/barbells-tablet@1x.png 1x, ./img/abonnements/barbells-tablet@2x.png 2x">
+                <img src="./img/abonnements/barbells-desktop@1x.png" width="287" height="494" srcset="./img/abonnements/barbells-desktop@2x.png 2x" alt="">
+              </picture>
+            </div>
           </div>
         </section>
 
