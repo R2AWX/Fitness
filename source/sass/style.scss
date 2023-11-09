@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -26,6 +26,8 @@
 @import "blocks/hero.scss";
 @import "blocks/gym.scss";
 @import "blocks/abonnements.scss";
+@import "blocks/jury.scss";
+@import "blocks/supergames.scss";
 
 
 // ---------------------------------

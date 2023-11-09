@@ -20,7 +20,7 @@
 }
 
 .btn--primary {
-  padding: 27px 6px;
+  padding: 25px 6px;
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;
@@ -28,7 +28,7 @@
   text-transform: uppercase;
 
   @include vp-1365 {
-    padding: 22px 6px;
+    padding: 20px 6px;
   }
 }
 

@@ -74,7 +74,7 @@
                   <img src="./img/gym/video-desktop@1x.jpg" width="364" height="228" srcset="./img/gym/video-desktop@2x.jpg 2x" alt="Постер видео тренажерного зала.">
                 </picture>
                 <button class="btn gym__btn" type="button" data-button="gym" aria-label="Воспроизвести видео.">
-                  <svg width="17" height="17" viewBox="0 0 17 17" role="img">
+                  <svg width="17" height="17" role="img">
                     <use href="img/sprite.svg#play"></use>
                   </svg>
                 </button>
@@ -108,7 +108,7 @@
                 <div class="abonnements__price-container">
                   <span class="abonnements__price-shadow" data-text="coach">5000</span>
                   <span class="abonnements__price" data-text="coach">5000</span>
-                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                  <svg width="30" height="42" role="img">
                     <use href="img/sprite.svg#rouble"></use>
                   </svg>
                 </div>
@@ -120,7 +120,7 @@
                 <div class="abonnements__price-container">
                   <span class="abonnements__price-shadow" data-text="daytime">1700</span>
                   <span class="abonnements__price" data-text="daytime">1700</span>
-                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                  <svg width="30" height="42" role="img">
                     <use href="img/sprite.svg#rouble"></use>
                   </svg>
                 </div>
@@ -132,7 +132,7 @@
                 <div class="abonnements__price-container">
                   <span class="abonnements__price-shadow" data-text="fullday">2700</span>
                   <span class="abonnements__price" data-text="fullday">2700</span>
-                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                  <svg width="30" height="42" role="img">
                     <use href="img/sprite.svg#rouble"></use>
                   </svg>
                 </div>
@@ -151,13 +151,48 @@
           </div>
         </section>
 
-        <section class="advantages">
-          <div class="container">
-            <h2>Жюри</h2>
+        <section class="jury">
+          <div class="container jury__container">
+            <div class="supergames__container">
+              <div class="supergames__content-container">
+                <div class="supergames__heading-container">
+                  <h2 class="supergames__heading">Super games</h2>
+                  <div class="supergames__text-container">
+                    <div class="supergames__time-container">
+                      <span class="supergames__text">Дата</span>
+                      <div class="supergames__data-container">
+                        <span class="supergames__number">7</span>
+                        <div class="supergames__data-wrapper">
+                          <span class="supergames__small-text">Марта</span>
+                          <span class="supergames__small-text">2019</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="supergames__time-container">
+                      <span class="supergames__text">Время</span>
+                      <span class="supergames__number">12:00</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="supergames__text supergames__description">Ежегодные соревнования по CrossFit</p>
+                <a class="btn btn--primary btn--primary-dark supergames__btn" href="#">Заполнить заявку</a>
+              </div>
+
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" width="290" height="292" srcset="./img/supergames/supergames-mobile@1x.webp 1x, ./img/supergames/supergames-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1365px)" width="386" height="324" srcset="./img/supergames/supergames-tablet@1x.webp 1x, ./img/supergames/supergames-tablet@2x.webp 2x">
+                <source type="image/webp" width="660" height="500" srcset="./img/supergames/supergames-desktop@1x.webp 1x, ./img/supergames/supergames-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)" width="290" height="292" srcset="./img/supergames/supergames-mobile@1x.jpg 1x, ./img/supergames/supergames-mobile@2x.jpg 2x">
+                <source media="(max-width: 1365px)" width="386" height="324" srcset="./img/supergames/supergames-tablet@1x.jpg 1x, ./img/supergames/supergames-tablet@2x.jpg 2x">
+                <img src="./img/supergames/supergames-desktop@1x.jpg" width="660" height="500" srcset="./img/supergames/supergames-desktop@2x.jpg 2x" alt="Спортсмен в облаке талька.">
+              </picture>
+            </div>
+
+            <h2 class="jury__heading">Жюри</h2>
           </div>
         </section>
 
-        <section class="jury">
+        <section class="advantages">
           <div class="container">
             <h2>Наши преимущества</h2>
           </div>
