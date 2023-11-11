@@ -38,3 +38,236 @@
     margin-bottom: 42px;
   }
 }
+
+.jury__members-container {
+  position: relative;
+
+  @include vp-1365 {
+    padding-right: 55px;
+    padding-left: 55px;
+  }
+
+  @include vp-767 {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+.jury__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jury__item {
+  position: relative;
+  color: $color-default-white;
+
+  @include hover-focus {
+    & .jury__item-title {
+      display: none;
+    }
+
+    & .jury__information {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.jury__item img {
+  width: 260px;
+  height: 294px;
+  object-fit: cover;
+  margin: 0 auto;
+  background-color: transparentize($color-sapphire, 0.11);
+
+  @include vp-1365 {
+    width: 268px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.jury__item-title {
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  transform: translateX(-50%);
+  width: 240px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+
+  @include vp-1365 {
+    width: 248px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    width: 206px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.jury__information {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 260px;
+  margin: 0 auto;
+  padding: 46px 30px;
+  background-color: transparentize($color-sapphire, 0.11);
+  overflow-y: scroll;
+  opacity: 0;
+  transition: $trans-default;
+
+  @include vp-1365 {
+    width: 268px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    padding: 41px 15px;
+  }
+}
+
+.jury__button {
+  position: absolute;
+  top: 50%;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid $color-default-white;
+
+  @include hover-focus {
+    border-color: $color-sapphire;
+  }
+
+  @include active {
+    background-color: $color-sapphire;
+
+    & svg {
+      color: $color-default-white;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @include vp-767 {
+    width: 40px;
+    height: 40px;
+  }
+
+  &--prev {
+    left: -74px;
+    transform: rotate(180deg) translateY(50%);
+
+    @include vp-1365 {
+      left: -18px;
+    }
+
+    @include vp-767 {
+      left: -13px;
+    }
+  }
+
+  &--next {
+    right: -74px;
+    transform: translateY(-50%);
+
+    @include vp-1365 {
+      right: -18px;
+    }
+
+    @include vp-767 {
+      right: -13px;
+    }
+  }
+}
+
+.jury__button svg {
+  color: $color-sapphire;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.jury__name {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @include vp-1365 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+}
+
+.jury__sport {
+  color: $color-spindle;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 33px;
+
+  @include vp-1365 {
+    margin-bottom: 44px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 37px;
+  }
+}
+
+.jury__achievement-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  width: 160px;
+  margin: 0 auto;
+  padding-left: 16px;
+  gap: 12px;
+
+  @include vp-767 {
+    gap: 10px;
+  }
+}
+
+.jury__achievement-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+
+  @include vp-767 {
+    font-weight: 700;
+    line-height: 20px;
+  }
+}
