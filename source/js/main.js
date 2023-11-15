@@ -3,7 +3,8 @@ import {Form} from './modules/form-validate/form';
 import {initVideo} from './modules/video';
 import {initPrice} from './modules/price';
 import {initSliderJury} from './modules/swiper-custom';
-
+import {initTabs} from './modules/tabs/init-tabs';
+import {initAccordions} from './modules/accordion/init-accordion';
 
 // ---------------------------------
 
@@ -26,6 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initVideo();
     initPrice();
     initSliderJury();
+    initTabs();
+    initAccordions();
   });
 });
 

@@ -13,10 +13,10 @@ body {
 
 html {
   font-style: normal;
-  font-weight: 300;
+  font-weight: $fw-default;
   font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-placeholder;
+  line-height: $lh-default;
+  font-family: $ff-default;
   color: $color-sapphire;
   scroll-behavior: smooth;
 

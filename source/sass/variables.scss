@@ -21,6 +21,7 @@ $color-torch-red-error:             #ff121f;
 $color-spindle:                     #b7becd;
 $color-persian-blue:                #2e34ad;
 $color-light-slate-grey:            #73809c;
+$color-link-water:                  #c7c8cc;
 $color-dark-cerulean:               rgba(20, 54, 122, 0.5);
 $color-grey:                        rgba(120, 120, 120, 0.2);
 $color-whisper:                     rgba(232, 232, 232, 0.48);
@@ -35,9 +36,10 @@ $resolution-blue-to-venetian-red:   linear-gradient(90deg, #1c3477 0%, #1c3477 0
 // ---------------------------------
 
 // переменная используемая в html для подключения скейлинга
+$fw-default:                        300;
 $fz-default:                        16px;
-
-$ff-placeholder:                    "Roboto Condensed", "Arial", sans-serif;
+$lh-default:                        24px;
+$ff-default:                        "Roboto Condensed", "Arial", sans-serif;
 $ff-heading:                        "Alumni Sans", "Arial", sans-serif;
 
 // Animation

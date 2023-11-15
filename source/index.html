@@ -74,7 +74,8 @@
                   <source media="(max-width: 1365px)" width="266" height="167" srcset="./img/gym/video-tablet@1x.jpg 1x, ./img/gym/video-tablet@2x.jpg 2x">
                   <img src="./img/gym/video-desktop@1x.jpg" width="364" height="228" srcset="./img/gym/video-desktop@2x.jpg 2x" alt="Постер видео тренажерного зала.">
                 </picture>
-                <button class="btn gym__btn" type="button" data-button="gym" aria-label="Воспроизвести видео.">
+                <button class="btn gym__btn" type="button" data-button="gym">
+                  <span class="visually-hidden">Воспроизвести видео.</span>
                   <svg width="17" height="17" role="img">
                     <use href="img/sprite.svg#play"></use>
                   </svg>
@@ -191,7 +192,8 @@
 
             <h2 class="jury__heading">Жюри</h2>
             <div class="jury__members-container">
-              <button class="btn jury__button jury__button--prev" type="button" data-button="prev-jury" aria-label="Предыдущий слайд.">
+              <button class="btn jury__button jury__button--prev" type="button" data-button="prev-jury">
+                <span class="visually-hidden">Предыдущий слайд.</span>
                 <svg width="16" height="32">
                   <use href="img/sprite.svg#arrow"></use>
                 </svg>
@@ -349,7 +351,8 @@
                 </ul>
               </div>
 
-              <button class="btn jury__button jury__button--next" type="button" data-button="next-jury" aria-label="Следующий слайд.">
+              <button class="btn jury__button jury__button--next" type="button" data-button="next-jury">
+                <span class="visually-hidden">Следующий слайд.</span>
                 <svg width="16" height="32">
                   <use href="img/sprite.svg#arrow"></use>
                 </svg>
@@ -457,6 +460,200 @@
         <section class="faq">
           <div class="container faq__container">
             <h2>Вопросы и ответы</h2>
+            <div class="faq__content-container" data-tabs="parent">
+              <div class="faq__btn-container" data-tabs="controls">
+                <button class="btn btn--tabs faq__btn" data-tabs="control" type="button">Центр</button>
+                <button class="btn btn--tabs faq__btn" data-tabs="control" type="button">Абонемент</button>
+                <button class="btn btn--tabs faq__btn" data-tabs="control" type="button">Услуги</button>
+                <button class="btn btn--tabs faq__btn" data-tabs="control" type="button">Правила</button>
+              </div>
+
+              <div class="faq__tabs-container" data-tabs="content">
+                <ul class="faq__list" data-tabs="element" data-accordion="parent">
+                  <li class="faq__item is-active" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Как стать членом фитнес&#8209;центра?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>                    </div>
+                  </li>
+
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Где можно посмотреть расписание?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>                    </div>
+                  </li>
+
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>                    </div>
+                  </li>
+
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Сколько тренеров работает в клубе и какова их&nbsp;квалификация?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>При первом посещении и&nbsp;покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и&nbsp;договор придет вам на&nbsp;почту.</p>                    </div>
+                  </li>
+                </ul>
+
+                <ul class="faq__list" data-tabs="element" data-accordion="parent">
+                  <li class="faq__item is-active" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Занятия с тренером входят в абонемент?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>                    </div>
+                  </li>
+
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Можно ли заморозить абонемент?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>                    </div>
+                  </li>
+
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>                    </div>
+                  </li>
+
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Что такое семейный доступ и доступ для друзей?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>При посещении тренажерного зала вам необходимо оплатить занятия с&nbsp;тренером отдельно. В&nbsp;зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по&nbsp;тренажеру или технике выполнения упражнения.</p>                    </div>
+                  </li>
+                </ul>
+
+                <ul class="faq__list" data-tabs="element" data-accordion="parent">
+                  <li class="faq__item is-active" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Предлагает ли клуб услуги по консультированию по&nbsp;вопросам питания?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>                    </div>
+                  </li>
+
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>                    </div>
+                  </li>
+
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Можно ли приобрести в центре спортивное питание?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>                    </div>
+                  </li>
+
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Есть ли в центре детская комната?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>Да. Вы&nbsp;можете обратиться как к&nbsp;своему тренеру, так и&nbsp;к&nbsp;нашему нутрициологу. Специалист уточнит ваши данные, цели и&nbsp;предложит программу питания.</p>                    </div>
+                  </li>
+                </ul>
+
+                <ul class="faq__list" data-tabs="element" data-accordion="parent">
+                  <li class="faq__item is-active" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Есть в фитнес-центре дресс-код?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.&nbsp;п., исключения составляют специальные классы (например, йога, пилатес).</p>                    </div>
+                  </li>
+
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Можно ли приводить с собой детей на тренировки?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.&nbsp;п., исключения составляют специальные классы (например, йога, пилатес).</p>                    </div>
+                  </li>
+
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Какие дополнительные правила посещения центра?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.&nbsp;п., исключения составляют специальные классы (например, йога, пилатес).</p>                    </div>
+                  </li>
+
+                  <li class="faq__item" data-accordion="element">
+                    <div class="faq__accordeon-heading-wrapper">
+                      <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+                      <button class="btn faq__accordion-btn" data-accordion="button" type="button">
+                        <span class="visually-hidden">Развернуть.</span>
+                      </button>
+                    </div>
+                    <div class="faq__accordeon-content" data-accordion="content">
+                      <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и&nbsp;одежду. Верхняя и&nbsp;нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В&nbsp;целях безопасности, запрещается тренироваться босиком, в&nbsp;пляжных или домашних тапочках и&nbsp;т.&nbsp;п., исключения составляют специальные классы (например, йога, пилатес).</p>                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 

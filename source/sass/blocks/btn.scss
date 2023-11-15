@@ -69,3 +69,41 @@
     opacity: 0.3;
   }
 }
+
+.btn--tabs {
+  padding: 18px 6px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  border: 1px solid transparentize($color-sapphire, 0.8);
+
+  @include vp-1365 {
+    padding: 14px 6px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @include hover-focus {
+    border-color: $color-sapphire;
+  }
+
+  @include active {
+    border-color: transparent;
+    border-image: $torch-red-to-cobalt;
+    border-image-slice: 1;
+    background: $torch-red-to-cobalt;
+    color: $color-default-white;
+  }
+
+  &.is-active {
+    border-color: transparent;
+    border-image: $torch-red-to-cobalt;
+    border-image-slice: 1;
+    background: $torch-red-to-cobalt;
+    color: $color-default-white;
+  }
+
+  &:disabled {
+    color: $color-link-water;
+  }
+}
