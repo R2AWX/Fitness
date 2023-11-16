@@ -660,6 +660,51 @@
         <section class="feedback">
           <div class="container feedback__container">
             <h2>Отзывы</h2>
+            <div class="feedback__content-container">
+              <button class="btn feedback__button feedback__button--prev" type="button" data-button="prev-feedback">
+                <span class="visually-hidden">Предыдущий слайд.</span>
+                <svg width="16" height="32">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+
+              <div class="feedback__swiper swiper" data-swiper="feedback">
+                <ul class="feedback__list swiper-wrapper">
+                  <li class="feedback__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="68" height="68" srcset="./img//feedback/orlova-mobile@1x.webp 1x, ./img//feedback/orlova-mobile@2x.webp 2x">
+                      <source type="image/webp" width="80" height="80" srcset="./img//feedback/orlova-desktop@1x.webp 1x, ./img//feedback/orlova-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" width="68" height="68" srcset="./img//feedback/orlova-mobile@1x.png 1x, ./img//feedback/orlova-mobile@2x.png 2x">
+                      <img src="./img/feedback/orlova-desktop@1x.png" width="80" height="80" srcset="./img//feedback/orlova-desktop@2x.png 2x" alt="Фото Анны Орловой.">
+                    </picture>
+                    <div class="feedback__information">
+                      <h3>Анна Орлова</h3>
+                      <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                    </div>
+                  </li>
+
+                  <li class="feedback__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="68" height="68" srcset="./img//feedback/orlova-mobile@1x.webp 1x, ./img//feedback/orlova-mobile@2x.webp 2x">
+                      <source type="image/webp" width="80" height="80" srcset="./img//feedback/orlova-desktop@1x.webp 1x, ./img//feedback/orlova-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" width="68" height="68" srcset="./img//feedback/orlova-mobile@1x.png 1x, ./img//feedback/orlova-mobile@2x.png 2x">
+                      <img src="./img/feedback/orlova-desktop@1x.png" width="80" height="80" srcset="./img//feedback/orlova-desktop@2x.png 2x" alt="Фото Анны Орловой.">
+                    </picture>
+                    <div class="feedback__information">
+                      <h3>Анна Орлова</h3>
+                      <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <button class="btn feedback__button feedback__button--next" type="button" data-button="next-feedback">
+                <span class="visually-hidden">Следующий слайд.</span>
+                <svg width="16" height="32">
+                  <use href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </section>
       </main>
