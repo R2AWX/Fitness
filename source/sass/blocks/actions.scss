@@ -1,19 +1,3 @@
-.actions__container {
-  max-width: $vp-1366;
-  padding-top: 120px;
-  padding-bottom: 120px;
-
-  @include vp-1365 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  @include vp-767 {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-}
-
 .actions__container h2 {
   font-family: $ff-heading;
   font-size: 54px;

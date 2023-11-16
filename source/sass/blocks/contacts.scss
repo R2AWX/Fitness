@@ -1,3 +1,20 @@
 .contacts {
   border-top: 1px solid $color-light-slate-grey;
 }
+
+.contacts__container {
+  width: 683px;
+  margin: 0;
+  margin-right: auto;
+  padding: 59px 103px 60px 120px;
+
+  @include vp-1365 {
+    width: 100%;
+    margin-left: auto;
+    padding: 100px 133px;
+  }
+
+  @include vp-767 {
+    padding: 70px 15px;
+  }
+}
