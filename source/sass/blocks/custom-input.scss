@@ -26,14 +26,8 @@
     line-height: 22px;
   }
 
-  &::-moz-placeholder {
+  &::placeholder {
     color: $color-default-white;
-    padding-left: 0;
-  }
-
-  &::-webkit-input-placeholder {
-    color: $color-default-white;
-    padding-left: 0;
   }
 
   &:hover {

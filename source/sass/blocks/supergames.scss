@@ -1,7 +1,7 @@
 .supergames__container {
   display: flex;
   justify-content: center;
-  padding-bottom: 120px;
+  padding-bottom: 119px;
 
   @include vp-1365 {
     padding-bottom: 100px;
@@ -33,7 +33,7 @@
 
 .supergames__heading-container {
   display: flex;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   @include vp-1365 {
     margin-bottom: 6px;
@@ -162,8 +162,7 @@
 }
 
 .supergames__description {
-  margin: 0;
-  margin-bottom: 55px;
+  margin: 0 0 56px;
 
   @include vp-1365 {
     margin-bottom: 21px;
