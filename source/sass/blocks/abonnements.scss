@@ -134,32 +134,30 @@
   &--center {
     border-image: $torch-red-to-cobalt;
     border-image-slice: 1;
-
-    & .abonnements__btn {
-      border-color: transparent;
-      border-image: $torch-red-to-cobalt;
-      border-image-slice: 1;
-      background: $torch-red-to-cobalt;
-      color: $color-default-white;
-    }
   }
 
   @include hover-focus {
     border-image: $torch-red-to-cobalt;
     border-image-slice: 1;
-
-    & .abonnements__btn {
-      border-color: transparent;
-      border-image: $torch-red-to-cobalt;
-      border-image-slice: 1;
-      background: $torch-red-to-cobalt;
-      color: $color-default-white;
-
-      @include active {
-        color: transparentize($color-default-white, 0.3);
-      }
-    }
   }
+}
+
+.abonnements__card-container:hover .abonnements__btn,
+.abonnements__card-container:focus .abonnements__btn,
+.abonnements__card-container--center .abonnements__btn {
+  border-color: transparent;
+  border-image: $torch-red-to-cobalt;
+  border-image-slice: 1;
+  background: $torch-red-to-cobalt;
+  color: $color-default-white;
+
+  @include active {
+    color: transparentize($color-default-white, 0.3);
+  }
+}
+
+.abonnements__btn {
+  width: 205px;
 }
 
 .abonnements__card-heading {
@@ -247,10 +245,6 @@
     line-height: 72px;
     margin-right: 10px;
   }
-}
-
-.abonnements__btn {
-  width: 205px;
 }
 
 .abonnements__img-container {

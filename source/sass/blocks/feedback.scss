@@ -110,10 +110,6 @@
 
   @include active {
     background-color: $color-sapphire;
-
-    & svg {
-      color: $color-default-white;
-    }
   }
 
   &:disabled {
@@ -155,4 +151,8 @@
     width: 10px;
     height: 19px;
   }
+}
+
+.feedback__button:active svg {
+  color: $color-default-white;
 }
