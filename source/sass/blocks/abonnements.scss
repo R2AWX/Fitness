@@ -26,7 +26,7 @@
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 24px;
+    margin: 3px 0 22px;
   }
 }
 
@@ -46,7 +46,7 @@
 
   @include vp-767 {
     gap: 45px;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 
   &::after {
@@ -88,7 +88,7 @@
   }
 
   @include vp-767 {
-    padding-bottom: 18px;
+    padding-bottom: 16px;
   }
 }
 
@@ -128,7 +128,7 @@
 
   @include vp-767 {
     width: 290px;
-    padding: 43px 0;
+    padding: 45px 0;
   }
 
   &--center {
@@ -177,6 +177,7 @@
   @include vp-767 {
     font-size: 22px;
     line-height: 22px;
+    margin-bottom: 14px;
   }
 }
 
@@ -188,8 +189,9 @@
   }
 
   @include vp-767 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
+    margin-bottom: 20px;
   }
 }
 
@@ -257,7 +259,7 @@
   bottom: -150px;
 
   @include vp-1365 {
-    bottom: -148px;
+    bottom: -147px;
   }
 
   @include vp-767 {

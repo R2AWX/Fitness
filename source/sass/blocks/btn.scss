@@ -77,8 +77,8 @@
   line-height: 18px;
   border: 1px solid transparentize($color-sapphire, 0.8);
 
-  @include vp-1365 {
-    padding: 16px 6px 12px;
+  @include vp-767 {
+    padding: 15px 6px 12px;
     font-size: 16px;
     line-height: 16px;
   }

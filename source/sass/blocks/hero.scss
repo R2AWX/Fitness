@@ -19,6 +19,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    padding-top: 39px;
     padding-bottom: 70px;
     flex-direction: column;
     gap: 60px;
@@ -70,6 +71,7 @@
   line-height: 22px;
 
   @include vp-767 {
+    margin-bottom: 2px;
     line-height: 20px;
     align-self: end;
     justify-self: center;

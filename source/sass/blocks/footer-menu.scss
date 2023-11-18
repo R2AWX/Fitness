@@ -19,7 +19,7 @@
   @include vp-767 {
     flex-direction: column;
     align-items: start;
-    padding-top: 30px;
+    padding-top: 29px;
     gap: 30px;
   }
 }
@@ -31,8 +31,8 @@
   }
 
   @include vp-767 {
-    width: 86px;
-    height: 15px;
+    width: 89px;
+    height: 16px;
   }
 }
 
@@ -46,8 +46,8 @@
   }
 
   @include vp-767 {
-    column-gap: 35px;
-    margin-bottom: 15px;
+    column-gap: 36px;
+    margin-bottom: 25px;
   }
 }
 
@@ -97,7 +97,7 @@
 .footer-menu__social-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content: flex-end;
   width: 109px;
   gap: 10px;
 

@@ -14,7 +14,7 @@
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 1.26px;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     text-align: center;
   }
 
@@ -69,6 +69,10 @@
 
 .faq__tabs-container {
   margin-bottom: 1px;
+
+  @include vp-1365 {
+    margin-bottom: 0;
+  }
 }
 
 .faq__list {

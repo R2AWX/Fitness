@@ -27,7 +27,7 @@
 
   @include vp-767 {
     width: 290px;
-    padding: 40px 55px;
+    padding: 40px;
   }
 }
 
@@ -166,10 +166,6 @@
 
   @include vp-1365 {
     margin-bottom: 21px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 20px;
   }
 }
 
