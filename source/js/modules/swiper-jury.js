@@ -17,15 +17,18 @@ function initSliderJury() {
         1366: {
           slidesPerView: 4,
           spaceBetween: 40,
+          initialSlide: 0,
         },
 
         768: {
           slidesPerView: 2,
+          initialSlide: 2,
           spaceBetween: 32,
         },
 
         320: {
           slidesPerView: 1,
+          initialSlide: 2,
         },
       },
     });
