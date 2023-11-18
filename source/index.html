@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header data-test="hero">
         <div class="container header__container">
           <h2 class="visually-hidden">SUPERGUM.</h2>
           <div class="header__wrapper">
@@ -25,10 +25,7 @@
             <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
           </div>
         </div>
-      </header>
 
-      <main>
-        <h1 class="visually-hidden">Fitness.</h1>
         <section class="hero">
           <div class="container hero__container">
             <div class="hero__content-container">
@@ -48,8 +45,11 @@
             <a class="btn btn--primary btn--primary-dark hero__mobile-btn" href="#abonnements">Купить абонемент</a>
           </div>
         </section>
+      </header>
 
-        <section class="gym">
+      <main>
+        <h1 class="visually-hidden">Fitness.</h1>
+        <section class="gym" data-test="about">
           <div class="container container--primary gym__container">
             <div class="gym__text-container">
               <h2>Тренажерный зал</h2>
@@ -86,7 +86,7 @@
           </div>
         </section>
 
-        <section class="abonnements" id="abonnements">
+        <section class="abonnements" id="abonnements" data-test="price">
           <div class="container container--primary abonnements__container" data-section="abonnements">
             <h2 class="abonnements__heading">Абонементы</h2>
             <fieldset class="abonnements__input-container">
@@ -154,7 +154,7 @@
           </div>
         </section>
 
-        <section class="jury">
+        <section class="jury" data-test="games">
           <div class="container container--primary jury__container">
             <div class="supergames__container">
               <div class="supergames__content-container">
@@ -362,7 +362,7 @@
           </div>
         </section>
 
-        <section class="advantages">
+        <section class="advantages" data-test="features">
           <div class="container container--primary advantages__container">
             <h2>Наши преимущества</h2>
             <ul class="advantages__list">
@@ -421,7 +421,7 @@
           </div>
         </section>
 
-        <section class="actions">
+        <section class="actions" data-test="offers">
           <div class="container container--primary actions__container">
             <h2>Акции</h2>
             <div class="actions__content-container">
@@ -458,7 +458,7 @@
           </div>
         </section>
 
-        <section class="faq">
+        <section class="faq" data-test="faq">
           <div class="container container--primary faq__container">
             <h2>Вопросы и ответы</h2>
             <div class="faq__content-container" data-tabs="parent">
@@ -674,7 +674,7 @@
           </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" data-test="reviews">
           <div class="container container--primary feedback__container">
             <h2>Отзывы</h2>
             <div class="feedback__content-container">
@@ -726,7 +726,7 @@
         </section>
       </main>
 
-      <footer>
+      <footer data-test="footer">
         <div class="footer__wrapper">
           <section class="form">
             <div class="form__container">
