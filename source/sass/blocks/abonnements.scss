@@ -33,6 +33,7 @@
 .abonnements__input-container {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   width: fit-content;
   margin: 0 auto 37px;
   gap: 50px;
