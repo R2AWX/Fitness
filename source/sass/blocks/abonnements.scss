@@ -133,12 +133,12 @@
   }
 
   &--center {
-    border-image: $torch-red-to-cobalt;
+    border-image: $crimson-to-smalt;
     border-image-slice: 1;
   }
 
   @include hover-focus {
-    border-image: $torch-red-to-cobalt;
+    border-image: $crimson-to-smalt;
     border-image-slice: 1;
   }
 }
