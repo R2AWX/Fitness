@@ -153,7 +153,7 @@
   color: $color-default-white;
 
   @include active {
-    color: transparentize($color-default-white, 0.3);
+    color: fade-out($color-default-white, 0.3);
   }
 }
 

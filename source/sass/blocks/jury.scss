@@ -61,7 +61,7 @@
   height: 294px;
   object-fit: cover;
   margin: 0 auto;
-  background-color: transparentize($color-sapphire, 0.11);
+  background-color: fade-out($color-sapphire, 0.11);
 
   @include vp-1365 {
     width: 268px;
@@ -107,7 +107,7 @@
   width: 260px;
   margin: 0 auto;
   padding: 46px 30px;
-  background-color: transparentize($color-sapphire, 0.11);
+  background-color: fade-out($color-sapphire, 0.11);
   overflow-y: scroll;
   opacity: 0;
   transition: $trans-default;
@@ -136,10 +136,6 @@
 
   @include active {
     background-color: $color-sapphire;
-
-    & svg {
-      color: $color-default-white;
-    }
   }
 
   &:disabled {
@@ -189,6 +185,10 @@
     width: 10px;
     height: 19px;
   }
+}
+
+.jury__button:active svg {
+  color: $color-default-white;
 }
 
 .jury__name {

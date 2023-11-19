@@ -60,7 +60,7 @@
     top: 50%;
     height: 2px;
     width: 340px;
-    background-color: transparentize($color-crimson, 0.8);
+    background-color: fade-out($color-crimson, 0.8);
 
     @include vp-1365 {
       display: none;

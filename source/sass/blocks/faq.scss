@@ -87,14 +87,14 @@
     left: 0;
     right: 0;
     height: 1px;
-    background-color: transparentize($color-resolution-blue, 0.8);
+    background-color: fade-out($color-resolution-blue, 0.8);
   }
 }
 
 .faq__item {
   width: 860px;
   padding-bottom: 24px;
-  border-top: 1px solid transparentize($color-resolution-blue, 0.8);
+  border-top: 1px solid fade-out($color-resolution-blue, 0.8);
 
   @include vp-1365 {
     width: 100%;
