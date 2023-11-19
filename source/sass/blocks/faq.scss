@@ -22,7 +22,7 @@
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 37px;
+    margin: 1px 0 36px;
   }
 }
 
@@ -42,7 +42,7 @@
 .faq__btn-container {
   display: grid;
   height: fit-content;
-  gap: 8px;
+  gap: 9px;
 
   @include vp-1365 {
     grid-template-columns: repeat(4, 1fr);
@@ -68,11 +68,7 @@
 }
 
 .faq__tabs-container {
-  margin-bottom: 1px;
-
-  @include vp-1365 {
-    margin-bottom: 0;
-  }
+  margin: -1px 0 1px;
 }
 
 .faq__list {
@@ -97,7 +93,7 @@
 
 .faq__item {
   width: 860px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-top: 1px solid transparentize($color-resolution-blue, 0.8);
 
   @include vp-1365 {
@@ -105,7 +101,7 @@
   }
 
   @include vp-767 {
-    padding-bottom: 22px;
+    padding-bottom: 21px;
   }
 }
 
@@ -169,11 +165,11 @@
   min-height: 40px;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
+  padding-top: 25px;
   cursor: pointer;
 
   @include vp-767 {
-    padding-top: 21px;
+    padding-top: 22px;
   }
 }
 
